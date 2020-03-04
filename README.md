@@ -1,3 +1,7 @@
+# Modified the following
+
++ Created cli script to use mkcert to create certificates (see https://github.com/FiloSottile/mkcert) due to issues with Ubuntu and chrome ssl store
++ Modified nginx conf to use the pem files from mkcert
 
 # Docker Compose and WordPress
 
