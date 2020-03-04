@@ -12,10 +12,12 @@ source "../.env"
 
 DOMAIN=$(echo "$DOMAIN")
 
+mkcert ${DOMAIN}
+
 rm -rf ../certs/*
 mkdir -p ../certs
 mv *.pem ../certs
 
-mkcert ${DOMAIN}
+
 
 echo -e ${GREEN}"Cert created in /cert! ${NC}"
