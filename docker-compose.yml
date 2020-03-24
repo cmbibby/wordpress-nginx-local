@@ -51,6 +51,7 @@ services:
     depends_on:
       - mysql
       - wordpress
+    user: "33:33"
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
